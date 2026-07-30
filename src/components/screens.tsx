@@ -199,7 +199,12 @@ export function Screen6({ go }: Props) {
   const polaroids = [
     { src: IMG.friendA, rot: -6, label: 'us ♥' },
     { src: IMG.friendB, rot: 5, label: 'forever' },
-    { src: IMG.friendC, rot: -3, label: 'bff' },
+    {
+      src: IMG.friendC,
+      rot: -3,
+      label: 'Best Friends Forever',
+      objectPosition: 'center 25%',
+    },
   ];
   return (
     <Slide id={6} bgPink>
@@ -226,9 +231,18 @@ export function Screen6({ go }: Props) {
                   src={p.src}
                   alt={p.label}
                   className="h-28 w-28 rounded-sm object-cover sm:h-32 sm:w-32"
+                  style={
+                    'objectPosition' in p
+                      ? { objectPosition: p.objectPosition }
+                      : undefined
+                  }
                   loading="lazy"
                 />
-                <p className="mt-1 text-center font-hand text-base text-nfdInk">
+                <p
+                  className={`mt-1 text-center font-hand text-nfdInk ${
+                    p.label.length > 10 ? 'text-sm leading-tight' : 'text-base'
+                  }`}
+                >
                   {p.label}
                 </p>
               </motion.div>
