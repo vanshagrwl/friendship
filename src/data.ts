@@ -19,12 +19,9 @@ export const IMG = {
   tearyCat:
     'https://images.pexels.com/photos/160722/pexels-photo-160722.jpeg?auto=compress&cs=tinysrgb&w=900',
   // Vintage frames + polaroids (friendship photos)
-  friendA:
-    'https://images.pexels.com/photos/2612738/pexels-photo-2612738.jpeg?auto=compress&cs=tinysrgb&w=700',
-  friendB:
-    'https://images.pexels.com/photos/8555022/pexels-photo-8555022.jpeg?auto=compress&cs=tinysrgb&w=700',
-  friendC:
-    'https://images.pexels.com/photos/6388235/pexels-photo-6388235.jpeg?auto=compress&cs=tinysrgb&w=700',
+  friendA: '/images/friend-a.jpg',
+  friendB: '/images/friend-b.jpg',
+  friendC: '/images/friend-c.jpg',
   // Screen 7 — pink gift box
   giftBox:
     'https://images.pexels.com/photos/19507872/pexels-photo-19507872.jpeg?auto=compress&cs=tinysrgb&w=900',
