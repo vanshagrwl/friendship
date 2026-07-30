@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* Organic blob clip-paths for the central canvas */
+.blob-canvas {
+  clip-path: path(
+    'M 0 80 C 0 30, 90 10, 180 12 C 320 15, 420 5, 500 40 C 560 70, 600 120, 590 200 C 580 280, 600 360, 560 430 C 520 490, 430 510, 330 505 C 230 500, 130 520, 70 480 C 20 445, 0 380, 10 300 C 18 240, 5 130, 0 80 Z'
+  );
+}
+
+/* Floating heart sparkle */
+@keyframes heart-float {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  50% { transform: translateY(-12px) rotate(8deg); opacity: 1; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+}
+.heart-float { animation: heart-float 3s ease-in-out infinite; }
+
+/* String line for polaroids */
+.polaroid-string {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(91, 43, 58, 0.35) 0 6px,
+    transparent 6px 12px
+  );
+}
