@@ -1,4 +1,8 @@
 // Central place for image assets used across the slideshow.
+import friendA from '@/assets/images/friend-a.jpg';
+import friendB from '@/assets/images/friend-b.jpg';
+import friendC from '@/assets/images/friend-c.jpg';
+
 export const IMG = {
   // Screen 0 — curious "pop cat"
   curiousCat:
@@ -19,9 +23,9 @@ export const IMG = {
   tearyCat:
     'https://images.pexels.com/photos/160722/pexels-photo-160722.jpeg?auto=compress&cs=tinysrgb&w=900',
   // Vintage frames + polaroids (friendship photos)
-  friendA: '/images/friend-a.jpg',
-  friendB: '/images/friend-b.jpg',
-  friendC: '/images/friend-c.jpg',
+  friendA,
+  friendB,
+  friendC,
   // Screen 7 — pink gift box
   giftBox:
     'https://images.pexels.com/photos/19507872/pexels-photo-19507872.jpeg?auto=compress&cs=tinysrgb&w=900',
