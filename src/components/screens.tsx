@@ -202,8 +202,8 @@ export function Screen6({ go }: Props) {
     {
       src: IMG.friendC,
       rot: -3,
-      label: 'Best Friends Forever',
-      objectPosition: 'center 25%',
+      label: 'bff',
+      objectPosition: 'center bottom',
     },
   ];
   return (
@@ -233,16 +233,15 @@ export function Screen6({ go }: Props) {
                   className="h-28 w-28 rounded-sm object-cover sm:h-32 sm:w-32"
                   style={
                     'objectPosition' in p
-                      ? { objectPosition: p.objectPosition }
+                      ? {
+                          objectFit: 'cover',
+                          objectPosition: p.objectPosition,
+                        }
                       : undefined
                   }
                   loading="lazy"
                 />
-                <p
-                  className={`mt-1 text-center font-hand text-nfdInk ${
-                    p.label.length > 10 ? 'text-sm leading-tight' : 'text-base'
-                  }`}
-                >
+                <p className="mt-1 text-center font-hand text-base text-nfdInk">
                   {p.label}
                 </p>
               </motion.div>
@@ -251,8 +250,8 @@ export function Screen6({ go }: Props) {
         </div>
       </div>
 
-      <h2 className="font-cursive text-6xl text-white drop-shadow-lg sm:text-7xl">
-        i LOVE YOU
+      <h2 className="font-cursive text-5xl text-white drop-shadow-lg sm:text-6xl">
+        Best Friends Forever
       </h2>
       <p className="mt-2 font-sans text-base text-white/90 sm:text-lg">
         You don&rsquo;t know how much you mean to me
